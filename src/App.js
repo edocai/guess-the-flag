@@ -13,15 +13,15 @@ function App() {
   const [selected, setSelected] = useState({});
 
   const generateRandomNations = () => {
-    let ct = [];
+    let randomN = [];
     for (let i = 0; i < 4; i++) {
-      const r = Math.floor(Math.random() * nations.length);
-      ct.push(nations[r]);
+      const random = Math.floor(Math.random() * nations.length);
+      randomN.push(nations[random]);
     }
 
-    setCountry(ct);
+    setCountry(randomN);
     const index = Math.floor(Math.random() * 4);
-    setFlagCountry(ct[index]);
+    setFlagCountry(randomN[index]);
   };
 
   const checkAnswer = (country) => {
