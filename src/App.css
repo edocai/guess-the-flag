@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 body, html {
-  font-family: 'Macondo', cursive;
-  background: linear-gradient(to left, #536976, #292e49);
+  font-family: 'Roboto Slab', serif;
+  background: #3f4c6b;
   color: #fff;
 }
 
@@ -30,4 +30,24 @@ body, html {
 
 .incorrect {
   color: rgb(255, 0, 0)
+}
+
+.home__button {
+  display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  img {
+    width: 350px !important;
+    height: 280px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  img {
+    width: 250px !important;
+    height: 180px !important;
+  }
 }
